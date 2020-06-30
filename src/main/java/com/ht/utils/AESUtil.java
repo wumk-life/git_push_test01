@@ -17,7 +17,6 @@ public class AESUtil {
     private static final String KEY_ALGORITHM = "AES";
     private static final String DEFAULT_CIPHER_ALGORITHM = "AES/CBC/PKCS5Padding";
 
-    
 
 
 
