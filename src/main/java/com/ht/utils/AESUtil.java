@@ -18,6 +18,8 @@ public class AESUtil {
     private static final String DEFAULT_CIPHER_ALGORITHM = "AES/CBC/PKCS5Padding";
 
     //测试=====================
+    //测试21
+
 
     /**
      * AES 加密操作
