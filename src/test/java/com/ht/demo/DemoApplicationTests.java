@@ -16,7 +16,7 @@ class DemoApplicationTests {
     private String secret = "1c6e99b74f4b4447944660b364494bcd";
     private String AESkey = "Htzc2020@!~CS1!@";
     private String AESiv = "Htzc1@2!3~4Cso.1";
-    private String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyQWdlbnQiOiJQTVNPRlQvNS4wIChXaW5kb3dzOyBMaW51eDsgSU9TO0FuZHJvaWQpICIsInVzZXJJZCI6ImVzazJNR2lDM0dNQjUwZHRLMGt5ZjJCU2YvZFA1eGQ2eGMyRThVU3RSZzV5ajQ1d0lCK21CZz09IiwianRpIjoiOWUyZDcyOWIzNzFhNGRmN2FjNDhlODBmM2JjYzMxMTQiLCJzdWIiOiJtaWNyb3NlcnZpY2UiLCJpc3MiOiJwbWluZm8iLCJpYXQiOjE1OTM0ODg0NzksImV4cCI6MTU5MzQ5NTY3OSwibmJmIjoxNTkzNDg0ODc5fQ.dvRDM4HnEZPdQfVOIu8txkAiY0Dd37zGRhAFF9ZOIVY";
+    private String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyQWdlbnQiOiJQTVNPRlQvNS4wIChXaW5kb3dzOyBMaW51eDsgSU9TO0FuZHJvaWQpICIsInVzZXJJZCI6ImVzazJNR2lDM0dNQjUwZHRLMGt5ZjJCU2YvZFA1eGQ2eGMyRThVU3RSZzV5ajQ1d0lCK21CZz09IiwianRpIjoiNGIwZTg1Njc3ZjlhNDVhY2E4MWEzNDI1NjU5ZWRkZDkiLCJzdWIiOiJtaWNyb3NlcnZpY2UiLCJpc3MiOiJwbWluZm8iLCJpYXQiOjE1OTM2NTI1NTAsImV4cCI6MTU5MzY1OTc1MCwibmJmIjoxNTkzNjQ4OTUwfQ.OBt4ASKRIzIM_Bv-5bghVZwN4LfoSZcoG4SnocEUMh0";
     private String gatewayUrl = "http://localhost:9070/api/gateway";
 
     @Test
@@ -98,8 +98,8 @@ class DemoApplicationTests {
     public void testQueryOrder(){
         Map<String, String> paramJsonMap = new HashMap<String, String>();
         paramJsonMap.put("payType", "1");
-        paramJsonMap.put("projectId", "b57ed21f-fb46-409b-82aa-0b7514462c91");
-        paramJsonMap.put("sectionId", "c678c026-e373-470b-b71c-681852b2c118");
+        paramJsonMap.put("projectId", "b57ed21ffb46409b82aa0b7514462c91");
+        paramJsonMap.put("sectionId", "c678c026e373470bb71c681852b2c118");
         paramJsonMap.put("entId", "2473975263103356");
         String content = JSONObject.toJSONString(paramJsonMap);
         String mapContent = AESUtil.encrypt(content, AESkey, AESiv);
